@@ -18,12 +18,12 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import org.jetbrains.annotations.NotNull;
-import dagger.hilt.android.HiltAndroidApp;
-import io.realm.Realm;
-import kotlin.jvm.internal.Intrinsics;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import javax.inject.Inject;
+import dagger.hilt.android.HiltAndroidApp;
+import io.realm.Realm;
+import kotlin.jvm.internal.Intrinsics;
 
 @HiltAndroidApp
 public class MainApplication extends Application implements ReactApplication, Configuration.Provider {

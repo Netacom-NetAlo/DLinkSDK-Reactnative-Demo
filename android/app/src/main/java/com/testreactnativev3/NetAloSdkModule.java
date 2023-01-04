@@ -2,9 +2,7 @@ package com.testreactnativev3;
 
 import android.content.Context;
 import android.util.Log;
-
 import androidx.annotation.Nullable;
-
 import com.asia.sdkbase.logger.Logger;
 import com.asia.sdkcore.entity.socket.Call;
 import com.asia.sdkcore.entity.ui.user.NeUser;
@@ -12,17 +10,11 @@ import com.asia.sdkui.ui.sdk.NetAloSDK;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.ReadableArray;
 import com.google.firebase.messaging.RemoteMessage;
-
 import org.jetbrains.annotations.NotNull;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-
 import kotlin.jvm.internal.Intrinsics;
 
 public final class NetAloSdkModule extends ReactContextBaseJavaModule {

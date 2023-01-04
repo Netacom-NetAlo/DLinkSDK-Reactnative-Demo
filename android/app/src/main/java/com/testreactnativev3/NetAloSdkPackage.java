@@ -2,12 +2,9 @@ package com.testreactnativev3;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.ReactApplicationContext;
-
 import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 

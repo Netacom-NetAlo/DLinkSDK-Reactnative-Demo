@@ -68,8 +68,8 @@ const App = () => {
               style={[styles.button]}
               onPress={() => {
                 NetAloSDK.setUser(
-                  "4785074617709103",
-                  "045626a0acadb8dd4365991965a1c9bc1378Hvns" ,
+                  "userId",
+                  "token" ,
                   "ToanMobile",
                   "",
                   "",
@@ -123,7 +123,7 @@ const App = () => {
             style={[styles.button]}
             onPress={() =>
               NetAloSDK.openChatWithUser(
-                "281474977724836",
+                "4785074617709101",
                 "G20",
                 "pFz0jhyeUzamyXcRx2dXkWUYApADL3Hcr2y6_nrCEV0qhblqq1Rzn4wyMxu2nqnH",
                 "aaa@gmail.com",
@@ -139,7 +139,7 @@ const App = () => {
             style={[styles.button]}
             onPress={() =>
               NetAloSDK.openChatWithUser(
-                "281474977724836",
+                "4785074617709101",
                 "G20",
                 "pFz0jhyeUzamyXcRx2dXkWUYApADL3Hcr2y6_nrCEV0qhblqq1Rzn4wyMxu2nqnH",
                 "aaa@gmail.com",

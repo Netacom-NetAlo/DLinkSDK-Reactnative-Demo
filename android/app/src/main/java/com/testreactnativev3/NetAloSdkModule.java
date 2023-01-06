@@ -108,6 +108,20 @@ public final class NetAloSdkModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public final void openChatWithGroup(@Nullable String groupId) {
+        Logger.INSTANCE.e("openChatWithGroup=" + ", groupId=" + groupId, new Object[0]);
+        Context context = this.reactContext.getApplicationContext();
+        Intrinsics.checkNotNullExpressionValue(context, "reactContext.applicationContext");
+        NetAloSDK.INSTANCE.openNetAloSDK(context
+                , (Boolean) false,
+                (ArrayList) null,
+                (NeUser) null,
+                (Call) null,
+                (Boolean) false,
+                (String) groupId);
+    }
+
+    @ReactMethod
     public final void initFirebase(RemoteMessage remoteMessage) {
         NetAloSDK.INSTANCE.initFirebase(reactContext.getApplicationContext(), remoteMessage);
     }

@@ -68,8 +68,8 @@ const App = () => {
               style={[styles.button]}
               onPress={() => {
                 NetAloSDK.setUser(
-                  "userId",
-                  "token" ,
+                  "4785074617709103",
+                  "0623804a02eca63e41d9acf152a728f37499uDK2" ,
                   "ToanMobile",
                   "",
                   "",
@@ -122,6 +122,7 @@ const App = () => {
           <TouchableOpacity
             style={[styles.button]}
             onPress={() =>
+              //NetAloSDK.openChatWithGroup("4793905981544488")
               NetAloSDK.openChatWithUser(
                 "4785074617709101",
                 "G20",

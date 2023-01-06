@@ -45,7 +45,7 @@ static void InitializeFlipper(UIApplication *application) {
                                            appId:17
                                            appKey:@"B2D89AC8B8ECF"
                                            accountKey:@"adminkey"
-                                           appGroupIdentifier: @"group.vn.netacom.vndirect-dev"
+                                           appGroupIdentifier: @"group.vn.com.vndirect.stockchat"
                                            storeUrl:@"https://apps.apple.com/vn/app/vndirect/id1594533471"
                                            forceUpdateProfile:YES
                                            allowCustomUsername:YES

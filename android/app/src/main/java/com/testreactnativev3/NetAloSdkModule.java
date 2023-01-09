@@ -7,6 +7,7 @@ import com.asia.sdkbase.logger.Logger;
 import com.asia.sdkcore.entity.socket.Call;
 import com.asia.sdkcore.entity.ui.user.NeUser;
 import com.asia.sdkui.ui.sdk.NetAloSDK;
+import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -70,7 +71,8 @@ public final class NetAloSdkModule extends ReactContextBaseJavaModule {
                 (NeUser) null,
                 (Call) null,
                 (Boolean) false,
-                (String) null);
+                (String) null,
+                (error) -> null);
     }
 
     @ReactMethod
@@ -104,11 +106,12 @@ public final class NetAloSdkModule extends ReactContextBaseJavaModule {
                 (NeUser) neUser,
                 (Call) null,
                 (Boolean) false,
-                (String) null);
+                (String) null,
+                (error) -> null);
     }
 
     @ReactMethod
-    public final void openChatWithGroup(@Nullable String groupId) {
+    public final void openChatWithGroup(@Nullable String groupId, @Nullable Callback callback) {
         Logger.INSTANCE.e("openChatWithGroup=" + ", groupId=" + groupId, new Object[0]);
         Context context = this.reactContext.getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(context, "reactContext.applicationContext");
@@ -118,7 +121,12 @@ public final class NetAloSdkModule extends ReactContextBaseJavaModule {
                 (NeUser) null,
                 (Call) null,
                 (Boolean) false,
-                (String) groupId);
+                (String) groupId,
+                (error) -> {
+                    Log.e("Error:", error);
+                    callback.invoke(error);
+                    return null;
+                });
     }
 
     @ReactMethod
